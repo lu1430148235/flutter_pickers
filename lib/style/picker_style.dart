@@ -31,7 +31,8 @@ class PickerStyle {
   Color? _backgroundColor;
   Color? _textColor;
   Widget? _itemOverlay;
-
+  TextStyle? _confirmBtnStyle,
+  TextStyle? _cancelBtnStyle,
   PickerStyle({
     BuildContext? context,
     bool? showTitleBar,
@@ -47,11 +48,14 @@ class PickerStyle {
     Color? backgroundColor,
     Color? textColor,
     Widget? itemOverlay,
+    TextStyle? confirmBtnStyle,
+    TextStyle? cancelBtnStyle,
   }) {
     this._context = context;
     this._showTitleBar = showTitleBar;
     this._menu = menu;
-
+    this._confirmBtnStyle = confirmBtnStyle;
+    this._cancelBtnStyle = cancelBtnStyle;
     this._pickerHeight = pickerHeight;
     this._pickerTitleHeight = pickerTitleHeight;
     this._pickerItemHeight = pickerItemHeight;
@@ -158,7 +162,7 @@ class PickerStyle {
           alignment: Alignment.center,
           padding: const EdgeInsets.only(left: 12, right: 22),
           child: Text('确定',
-              style: TextStyle(
+              style:confirmBtnStyle??TextStyle(
                   color: Color(0xffFF2E2E), fontSize: 14.0)),
         );
   }
@@ -169,7 +173,7 @@ class PickerStyle {
           alignment: Alignment.center,
           padding: const EdgeInsets.only(left: 22, right: 12),
           child: Text('取消',
-              style: TextStyle(
+              style: cancelBtnStyle??TextStyle(
                   color: Color(0xff333333),
                   fontSize: 14.0)),
         );
