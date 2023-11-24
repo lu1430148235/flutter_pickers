@@ -159,7 +159,7 @@ class PickerStyle {
           padding: const EdgeInsets.only(left: 12, right: 22),
           child: Text('确定',
               style: TextStyle(
-                  color: Color(0xffFF2E2E), fontSize: 16.0)),
+                  color: Color(0xffFF2E2E), fontSize: 14.0)),
         );
   }
 
@@ -171,7 +171,7 @@ class PickerStyle {
           child: Text('取消',
               style: TextStyle(
                   color: Color(0xff333333),
-                  fontSize: 16.0)),
+                  fontSize: 14.0)),
         );
   }
 }
