@@ -31,8 +31,8 @@ class PickerStyle {
   Color? _backgroundColor;
   Color? _textColor;
   Widget? _itemOverlay;
-  TextStyle? _confirmBtnStyle,
-  TextStyle? _cancelBtnStyle,
+  TextStyle? _confirmBtnStyle;
+  TextStyle? _cancelBtnStyle;
   PickerStyle({
     BuildContext? context,
     bool? showTitleBar,
