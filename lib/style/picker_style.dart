@@ -162,7 +162,7 @@ class PickerStyle {
           alignment: Alignment.center,
           padding: const EdgeInsets.only(left: 12, right: 22),
           child: Text('确定',
-              style:confirmBtnStyle??TextStyle(
+              style:this._confirmBtnStyle??TextStyle(
                   color: Color(0xffFF2E2E), fontSize: 14.0)),
         );
   }
@@ -173,7 +173,7 @@ class PickerStyle {
           alignment: Alignment.center,
           padding: const EdgeInsets.only(left: 22, right: 12),
           child: Text('取消',
-              style: cancelBtnStyle??TextStyle(
+              style: this._cancelBtnStyle??TextStyle(
                   color: Color(0xff333333),
                   fontSize: 14.0)),
         );
